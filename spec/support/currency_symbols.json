@@ -7,5 +7,18 @@
     "ANG":{"description":"Netherlands Antillean Guilder","code":"ANG"},
     "AOA":{"description":"Angolan Kwanza","code":"AOA"},
     "TMT":{"description":"Turkmenistani Manat","code":"TMT"}
-    }
+  },
+  "quotes":{
+    "USDAED":3.67295,
+    "USDAFN":76.350403,
+    "USDALL":104.800403,
+    "USDAMD":487.549403,
+    "USDANG":1.790403,
+    "USDAOA":654.800403,
+    "USDTMT":3.5,
+    "TMTAMD":0.001,
+    "TMTAOA":0.001,
+    "AMDTMT":0.002,
+    "AOATMT":0.002
   }
+}

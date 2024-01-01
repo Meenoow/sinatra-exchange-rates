@@ -36,6 +36,14 @@ RSpec.configure do |config|
     stub_request(:get, /api.exchangerate.host\/list/).
       with(headers: { "Connection" => "close", "Host" => "api.exchangerate.host", "User-Agent" => "http.rb/#{HTTP::VERSION}" }).
       to_return(status: 200, body: api_response, headers: { "Content-Type" => "application/json" })
+
+    stub_request(:get, /api.exchangerate.host\/live/).
+      with(headers: { "Accept" => "*/*", "User-Agent" => "Ruby" }).
+      to_return(status: 200, body: api_response, headers: { "Content-Type" => "application/json" })
+
+    stub_request(:get, /api.exchangerate.host\/live/).
+      with(headers: { "Connection" => "close", "Host" => "api.exchangerate.host", "User-Agent" => "http.rb/#{HTTP::VERSION}" }).
+      to_return(status: 200, body: api_response, headers: { "Content-Type" => "application/json" })
   end
 end
 path_to_file = Dir.pwd + "/spec/support/cup_to_svc.json"
